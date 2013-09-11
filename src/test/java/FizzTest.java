@@ -20,5 +20,14 @@ public class FizzTest {
 			assertEquals(true,f.multiplos3(c));
 		}
 	}
+	
+	@Test
+	public void testPalabra()
+	{
+		assertEquals("fizzbuzz",f.palabras(15));
+		assertEquals("fizz",f.palabras(3));
+		assertEquals("buzz",f.palabras(5));
+		assertEquals("13",f.palabras(13));
+	}
 
 }
