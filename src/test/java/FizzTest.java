@@ -9,7 +9,16 @@ public class FizzTest {
 	@Test
 	public void verificarMultiplo5()
 	{
-		assertEquals(true,f.multiplos(10));
+		assertEquals(true,f.multiplos5(10));
+	}
+	
+	@Test
+	public void verificarMutliplo3()
+	{
+		for(int c = 3; c < 100; c+=3 )
+		{
+			assertEquals(true,f.multiplos3(c));
+		}
 	}
 
 }
