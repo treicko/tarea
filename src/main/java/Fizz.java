@@ -8,9 +8,12 @@ public class Fizz {
 		
 	}
 	
-	public int ProbarTests()
+	public boolean multiplos(int num)
 	{
-		return 0;
+		if(num % 5 == 0)
+			return true;
+		else 
+			return false;
 	}
 
 }

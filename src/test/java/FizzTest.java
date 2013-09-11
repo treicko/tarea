@@ -7,8 +7,9 @@ public class FizzTest {
 
 	Fizz f = new Fizz(); 
 	@Test
-	public void pruebaTest() {
-		assertEquals(0,f.ProbarTests());
+	public void verificarMultiplo5()
+	{
+		assertEquals(true,f.multiplos(10));
 	}
 
 }
