@@ -3,4 +3,11 @@
   <groupId>Tarea</groupId>
   <artifactId>Tarea</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.4</version>
+    </dependency>
+  </dependencies>
 </project>

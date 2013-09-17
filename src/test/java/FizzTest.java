@@ -1,11 +1,19 @@
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 
 public class FizzTest {
 
-	Fizz f = new Fizz(); 
+	Fizz f; 
+	
+	@Before
+	public void Setup()
+	{
+		f = new Fizz();
+	}
+	
 	@Test
 	public void verificarMultiplo5()
 	{
