@@ -17,7 +17,7 @@ public class FizzTest {
 	@Test
 	public void verificarMultiplo5()
 	{
-		assertEquals(true,f.multiplos5(10));
+		assertEquals(true,f.multiplosde(10,5));
 	}
 	
 	@Test
@@ -25,7 +25,7 @@ public class FizzTest {
 	{
 		for(int c = 3; c < 100; c+=3 )
 		{
-			assertEquals(true,f.multiplos3(c));
+			assertEquals(true,f.multiplosde(c,3));
 		}
 	}
 	

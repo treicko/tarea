@@ -1,6 +1,10 @@
 
 public class Fizz {
 
+	private static final String BUZZ = "buzz";
+	private static final String FIZZ = "fizz";
+	private static final String FIZZBUZZ = "fizzbuzz";
+
 	/**
 	 * @param args
 	 */
@@ -8,41 +12,26 @@ public class Fizz {
 		imprimir();
 	}
 	
-	public static boolean multiplos5(int num)
+	public static boolean multiplosde(int num, int num2)
 	{
-		if(num % 5 == 0)
-			return true;
-		else 
-			return false;
-	}
-	public static boolean multiplos3(int num)
-	{
-		if(num % 3 == 0)
-			return true;
-		else 
-			return false;
+		return num%num2 == 0;
 	}
 	
 	public static String palabras(int num)
 	{
-		String str;
-		if(multiplos3(num) && multiplos5(num))
+		if(multiplosde(num,3) && multiplosde(num,5))
 		{
-			str = "fizzbuzz";
-			return str;
+			return FIZZBUZZ;
 		}
-		if(multiplos3(num))
+		if(multiplosde(num,3))
 		{
-			str = "fizz";
-			return str;
+			return FIZZ;
 		}
-		if(multiplos5(num))
+		if(multiplosde(num,5))
 		{
-			str = "buzz";
-			return str;
+			return BUZZ;
 		}
-		str = Integer.toString(num);
-		return str;
+		return Integer.toString(num);
 	}
 	
 	public static void imprimir()
