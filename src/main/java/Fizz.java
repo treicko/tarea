@@ -9,7 +9,7 @@ public class Fizz {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		imprimir();
+		System.out.println(fizzbuzzN(100));
 	}
 	
 	public static boolean multiplosde(int num, int num2)
@@ -34,12 +34,14 @@ public class Fizz {
 		return Integer.toString(num);
 	}
 	
-	public static void imprimir()
+	public static String fizzbuzzN(int n)
 	{
-		for(int i=1;i<=100;i++)
+		String resultado="";
+		for(int i=1;i<=n;i++)
 		{
-			System.out.println(palabras(i));
+			resultado=resultado+palabras(i)+"\n";
 		}
+		return resultado;
 	}
 
 }

@@ -37,5 +37,4 @@ public class FizzTest {
 		assertEquals("buzz",f.palabras(5));
 		assertEquals("13",f.palabras(13));
 	}
-
 }
